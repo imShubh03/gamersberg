@@ -3,6 +3,16 @@
 ## Overview
 This project is a **Blox Fruits trading calculator**, designed to help players calculate the value of in-game items. The frontend is built using **Next.js**, **TypeScript**, and **ShadCN**, while **Jotai** is used for global state management. The app features a responsive UI, a fruit selection system, and a real-time value calculation system.
 
+##Screenshots
+![image](https://github.com/user-attachments/assets/6fcc593c-c639-4d9b-90ed-89e407c7a0c3)
+![image](https://github.com/user-attachments/assets/0ebf8e1a-ecd4-4758-ba44-0f24af36058f)
+![image](https://github.com/user-attachments/assets/e1139f39-79c1-4e76-9d1c-c1b637e746de)
+![image](https://github.com/user-attachments/assets/33818f63-a3e7-4ada-adb3-bf608546ec82)
+![image](https://github.com/user-attachments/assets/71305644-4304-4e84-aca1-ec12477c4f7e)
+
+
+
+
 ## Main Focus Areas
 - **Next.js with TypeScript**
 - **State Management using Jotai**
