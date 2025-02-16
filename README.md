@@ -72,13 +72,9 @@ yarn install
 pnpm install
 ```
 
-### **3. Set Up Environment Variables**
-Create a `.env.local` file in the root directory:
-```sh
-NEXT_PUBLIC_API_URL=your_api_url_here
-```
 
-### **4. Install ShadCN Components**
+
+### **3. Install ShadCN Components**
 ```sh
 npx shadcn-ui@latest init
 ```
@@ -87,7 +83,7 @@ Install required components:
 npx shadcn-ui@latest add dialog button input dropdown-menu
 ```
 
-### **5. Run Development Server**
+### **4. Run Development Server**
 ```sh
 npm run dev
 # or
