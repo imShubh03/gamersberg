@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gamersberg Blox Fruits Calculator
 
-## Getting Started
+## Overview
+This project is a **Blox Fruits trading calculator**, designed to help players calculate the value of in-game items. The frontend is built using **Next.js**, **TypeScript**, and **ShadCN**, while **Jotai** is used for global state management. The app features a responsive UI, a fruit selection system, and a real-time value calculation system.
 
-First, run the development server:
+## Main Focus Areas
+- **Next.js with TypeScript**
+- **State Management using Jotai**
+- **UI Components with ShadCN**
+- **Responsive Design**
+- **Deploying on Vercel**
 
-```bash
+## Features
+
+### 1. **Fruit Selection**
+- Browse and select **multiple Blox Fruits**
+- Displays **images and prices** of selected fruits
+- Maximum of 4 fruits per trade side
+- Search functionality for quick fruit finding
+
+### 2. **Real-Time Value Calculation**
+- Instantly updates the **total value and price** of selected items
+- **Comparison feature** to calculate differences in trade value
+- Multiple value provider options (Gamersberg, RolimonsPrices, etc.)
+- Automatic price updates based on selected provider
+
+### 3. **UI & UX Enhancements**
+- **Modern design** with a **purple gradient theme**
+- **Dark mode** for a sleek appearance
+- Uses **ShadCN UI components** for a smooth experience
+- Interactive modals and dropdowns
+- Responsive grid layouts for fruit display
+
+### 4. **State Management with Jotai**
+- Manages fruit selection, total value, and price efficiently
+- Provides **reactive UI updates** with minimal performance overhead
+- Centralized state management for consistent data flow
+- Persistent state for selected items
+
+### 5. **Responsive Design**
+- Optimized for **desktop, tablet, and mobile**
+- Uses **flexbox and grid layouts** for a seamless experience
+- Adaptive UI elements based on screen size
+- Touch-friendly interface for mobile users
+
+## Tech Stack
+
+### **Frontend**
+- **Next.js** (React Framework)
+- **TypeScript** (For type safety)
+- **ShadCN** (UI Components)
+- **Jotai** (State management)
+- **Tailwind CSS** (Styling)
+
+### **Deployment**
+- **Vercel** (For hosting)
+
+## Setup Instructions
+
+### **1. Clone the Repository**
+```sh
+git clone https://github.com/your-username/gamersberg-calculator.git
+cd gamersberg-calculator
+```
+
+### **2. Install Dependencies**
+```sh
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+
+
+### **3. Install ShadCN Components**
+```sh
+npx shadcn-ui@latest init
+```
+Install required components:
+```sh
+npx shadcn-ui@latest add dialog button input dropdown-menu
+```
+
+### **4. Run Development Server**
+```sh
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
+```
+gamersberg-calculator/
+├── app/
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── CalculatorResults.tsx
+│   ├── FruitGrid.tsx
+│   ├── SearchModal.tsx
+│   └── ui/
+├── data/
+│   └── fruits.ts
+├── store/
+│   └── atoms.ts
+├── types/
+│   └── fruit.ts
+└── styles/
+    └── globals.css
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/improvement`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'Add new feature'`)
+5. Push to the branch (`git push origin feature/improvement`)
+6. Create a Pull Request
 
-## Learn More
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-To learn more about Next.js, take a look at the following resources:
+## Acknowledgments
+- Thanks to the ShadCN team for the excellent UI components
+- Inspiration from the Blox Fruits community
+- Gamersberg for value reference data
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+For any questions or concerns, please open an issue on the GitHub repository.
