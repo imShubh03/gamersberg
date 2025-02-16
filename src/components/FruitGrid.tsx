@@ -43,13 +43,13 @@ export const FruitGrid = ({ selectedFruitsAtom, onAddClick }: FruitGridProps) =>
                     );
                 }
                 return (
-                    <button
+                    <Button
                         key={`empty-${index}`}
                         onClick={onAddClick}
                         className="h-32 border-2 border-dashed border-gray-700 rounded-lg flex items-center justify-center hover:border-gray-500 transition-colors"
                     >
                         <div className="text-4xl text-gray-500">+</div>
-                    </button>
+                    </Button>
                 );
             })}
         </div>
